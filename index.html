@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="td.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=" 1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>C++ Documentation</title>
+</head>
+
+<body>
+
+    <main id="main-doc">
+
+
+        <nav id="navbar">
+            <header id="header">C++ Documentation</header>
+            <ul>
+                <li> <a href="#introduction" class="nav-link"> Introduction </a> </li>
+                <li> <a href="#prerequisites" class="nav-link"> Prerequisites </a> </li>
+                <li> <a href="#applications" class="nav-link"> Applications </a> </li>
+                <li> <a href="#Hello_World" class="nav-link"> Hello World </a> </li>
+                <li> <a href="#data_types" class="nav-link"> Data types </a> </li>
+                <li> <a href="#variables" class="nav-link"> Variables </a> </li>
+                <li> <a href="#if...else_statement" class="nav-link"> If...else Statement </a> </li>
+                <li> <a href="#reference" class="nav-link"> Reference </a> </li>
+            </ul>
+        </nav>
+
+        <section class="main-section" id="introduction">
+
+            <header> Introduction </header>
+            <p> C++ is one of the world's most popular programming languages.
+                C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
+                C++ is an object-oriented programming language which gives a clear structure to programs and allows code
+                to be reused, lowering development costs.
+                C++ is portable and can be used to develop applications that can be adapted to multiple platforms.
+                C++ is fun and easy to learn!
+            <ul>Difference between c and c++
+                <li> C++ was developed as an extension of C, and both languages have almost the same syntax.</li>
+                <li>The main difference between C and C++ is that C++ support classes and objects, while C does not.
+                </li>
+            </ul>
+            </p>
+        </section>
+
+        <section class="main-section" id="prerequisites">
+            <header> Prerequisites </header>
+            <p>
+                This guide assumes you have the following basic background:
+            <ul>
+                <li> A general understanding of the Internet and the World Wide Web (WWW). </li>
+                <li> A compiler, like GCC, to translate the C++ code into a language that the computer will understand.
+                </li>
+                <li> A text editor, like Notepad, to write C++ code.</li>
+            </ul>
+            </p>
+        </section>
+
+        <section class="main-section" id="applications">
+            <header> Applications </header>
+            <p>C++ (or “C-plus-plus”) is a general-purpose programming and coding language.
+                C++ is used in developing browsers, operating systems, and applications, as well as in-game programming,
+                software engineering, data structures, etc.
+            <ul>Applications are:
+                <li>Web Browser</li>
+                <li> Database Management Software</li>
+                <li> Compilers</li>
+                <li> Banking Applications</li>
+                <li> Embedded Systems</li>
+                <li> Operating Systems</li>
+                <li> Games</li>
+                <li> GUI based applications</li>
+                <li> Cloud/Distributed Systems</li>
+                <li> Advanced Computation and Graphics</li>
+            </ul>
+            </p>
+
+        </section>
+        <section class="main-section" id="Hello_World">
+            <header> Hello World</header>
+            <p> To get started with writing c++, open the text-editor and write your first "Hello world" cpp code:
+
+                <code> #include<iostream><br>
+            using namespace std;<br>
+            cout <<"hello world";<br>
+        </code>
+                Run the above code.
+            </p>
+        </section>
+
+        <section class="main-section" id="data_types">
+            <header> Data Types </header>
+            <p> The latest standard defines seven data types:
+            <ul>
+                <li>Six data types that are primitives:
+                    <ul>
+                        <li>Boolean. true and false.</li>
+                        <li>null. A special keyword denoting a null value. Because cpp is case-sensitive, null is not
+                            the same as Null, NULL, or any other variant.</li>
+                        <li>undefined. A top-level property whose value is undefined.</li>
+                        <li>Number. 42 or 3.14159. </li>
+                        <li>String. "Howdy"</li>
+                    </ul>
+                <li> and Object </li>
+            </ul>
+            Although these data types are a relatively small amount, they enable you to perform useful functions with
+            your applications. Objects and functions are the other fundamental elements in the language. You can think
+            of objects as named containers for values, and functions as procedures that your application can perform.
+            </p>
+        </section>
+
+        <section class="main-section" id="variables">
+            <header> Variables </header>
+            <p>
+                You use variables as symbolic names for values in your application. The names of variables, called
+                identifiers, conform to certain rules.
+
+                A cpp identifier must start with a letter, underscore (_), subsequent characters can also be digits
+                (0-9). Because cpp is case sensitive, letters include the characters "A" through "Z" (uppercase) and the
+                characters "a" through "z" (lowercase).
+
+                You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names
+                are Number_hits, temp99, and _name. </p>
+        </section>
+
+        <section class="main-section" id="if...else_statement">
+            <header> If...else statement </header>
+            <p> Use the if statement to execute a statement if a logical condition is true. Use the optional else clause
+                to execute a statement if the condition is false. An if statement looks as follows:
+                <code> if (condition) { statement_1; } else { statement_2; } </code>
+                condition can be any expression that evaluates to true or false. See Boolean for an explanation of what
+                evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise,
+                statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if
+                statements.
+                You may also compound the statements using else if to have multiple conditions tested in sequence, as
+                follows:
+
+                <code> if (condition_1) { statement_1; } else if (condition_2) {
+        statement_2; } else if (condition_n) { statement_n; } else {
+        statement_last; } </code>
+                In the case of multiple conditions only the first logical condition which evaluates to true will be
+                executed. To execute multiple statements, group them within a block statement ({ ... }) . In general,
+                it's good practice to always use block statements, especially when nesting if statements:
+
+                <code> if (condition) { statement_1_runs_if_condition_is_true;
+        statement_2_runs_if_condition_is_true; } else {
+        statement_3_runs_if_condition_is_false;
+        statement_4_runs_if_condition_is_false; } </code>
+
+                It is advisable to not use simple assignments in a conditional expression, because the assignment can be
+                confused with equality when glancing over the code. For example, do not use the following code:
+
+                <code> if (x = y) { /* statements here */ } </code>
+                If you need to use an assignment in a conditional expression, a common practice is to put additional
+                parentheses around the assignment. For example:
+
+                <code> if ((x = y)) { /* statements here */ } </code>
+            </p>
+        </section>
+
+        <section class="main-section" id="reference">
+            <header> Reference</header>
+            <p>
+            <ul>
+                <li> All the documentation in this page is taken from <a
+                        href="https://www.w3schools.com/cpp/cpp_getstarted.asp" class="referral-link"> MDN </a></li>
+            </ul>
+        </section>
+    </main >
+
+</html>
